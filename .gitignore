@@ -1,0 +1,15 @@
+# Chặn thư mục node_modules ở mọi cấp
+node_modules/
+dist/
+.env
+
+# Chặn cấu hình của JetBrains (WebStorm, IntelliJ...)
+.idea/
+
+# Chặn cấu hình của VS Code
+.vscode/
+
+# Chặn các file log hệ thống
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
