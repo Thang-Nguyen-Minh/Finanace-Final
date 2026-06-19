@@ -110,6 +110,14 @@ export class QuanLyTaiChinh {
     // ==========================================
     addGiaoDich(money, categoryId, ghiChu, dateStr) {
         const [nam, thang, ngay] = dateStr.split("-").map(Number);
+        const ngayHientai=new Date();
+        const homNay=new Date(ngayHientai.getFullYear(),ngayHientai.getMonth(),ngayHientai.getDate())
+        const quaKhu=new Date(homNay)
+        quaKhu.setMonth(quaKhu.getMonth()-2)
+        const ngayNhap=new Date(nam, thang-1,ngay);
+        if (ngayNhap<quaKhu || ngayNhap>homNay){
+            return "Cannot Add Transaction";
+        }
         const gdMoi = new GiaoDich(money, categoryId, ghiChu, nam, thang, ngay);
         this.dsGiaoDich.push(gdMoi);
         this.saveToLocalStorage();

@@ -155,6 +155,6 @@ SOFTWARE.
 **Author**
 
 - 👤 **Thang Nguyen Minh**
-- ✉️ Email: 136478740+Thang-Nguyen-Minh@users.noreply.github.com
+- ✉️ Email: nmthang2004@gmail.com
 - 🔗 GitHub: [@Thang-Nguyen-Minh](https://github.com/Thang-Nguyen-Minh)
 - 📦 Repository: [Finanace-Final](https://github.com/Thang-Nguyen-Minh/Finanace-Final)
